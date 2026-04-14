@@ -49,7 +49,7 @@
     <span onclick="addEmojiTwo('&#128274;')">&#128274;</span>
     <span onclick="addEmojiTwo('&#128267;')">&#128267;</span>
     <span onclick="addEmojiTwo('&#128230;')">&#128230;</span>
-    <span onclick="addEmojiTwo('&#128187;')">&#128187; </span>
+    <span onclick="addEmojiTwo('&#128187;')">&#128187;</span>
 </div>
 
 <div id="list-emoji-three" class="list-emoji">
@@ -69,7 +69,7 @@
     <span onclick="addEmojiThree('&#128179;')">&#128179;</span>
     <span onclick="addEmojiThree('&#128190;')">&#128190;</span>
     <span onclick="addEmojiThree('&#128249;')">&#128249;</span>
-    <span onclick="addEmojiThree('&#128252;')">&#128252; </span>
+    <span onclick="addEmojiThree('&#128252;')">&#128252;</span>
 </div>
 
 <div id="list-emoji-four" class="list-emoji">
@@ -87,13 +87,13 @@
 
     <span onclick="addEmojiFour('&#128338;')">&#128338;</span>
     <span onclick="addEmojiFour('&#128142;')">&#128142;</span>
-    <span onclick="addEmojiFour('&#128269;')">&#128269; </span>
+    <span onclick="addEmojiFour('&#128269;')">&#128269;</span>
     <span onclick="addEmojiFour('&#128679;')">&#128679;</span>
-    <span onclick="addEmojiFour('&#128184;')">&#128184;  </span>
+    <span onclick="addEmojiFour('&#128184;')">&#128184;</span>
 </div>
 
 <div id="list-emoji-five" class="list-emoji">
-    <span onclick="addEmojiFive('&#127912;')">&#127912; </span>
+    <span onclick="addEmojiFive('&#127912;')">&#127912;</span>
     <span onclick="addEmojiFive('&#128692;')">&#128692;</span>
     <span onclick="addEmojiFive('&#127939;')">&#127939;</span>
     <span onclick="addEmojiFive('&#128675;')">&#128675;</span>
@@ -107,9 +107,9 @@
 
     <span onclick="addEmojiFive('&#9917;')">&#9917;</span>
     <span onclick="addEmojiFive('&#127926;')">&#127926;</span>
-    <span onclick="addEmojiFive('&#127881;')">&#127881; </span>
+    <span onclick="addEmojiFive('&#127881;')">&#127881;</span>
     <span onclick="addEmojiFive('&#127880;')">&#127880;</span>
-    <span onclick="addEmojiFive('&#127909;')">&#127909; </span>
+    <span onclick="addEmojiFive('&#127909;')">&#127909;</span>
 </div>
 
 
@@ -119,110 +119,6 @@
 <button type="button" class="copy" onclick="copyText()">Copy Text</button>
 </p>
 
-<script>
-
-let em_one = document.getElementById('list-emoji-one');
-let em_two = document.getElementById('list-emoji-two');
-let em_three = document.getElementById('list-emoji-three');
-let em_four = document.getElementById('list-emoji-four');
-let em_five = document.getElementById('list-emoji-five');
-
-function showEmojiOne() {
-    if(em_one.style.display !== 'block') {
-        em_one.style.display = 'block';
-        em_two.style.display = 'none';
-        em_three.style.display = 'none';
-        em_four.style.display = 'none';
-        em_five.style.display = 'none';
-    }
-    else {
-        em_one.style.display = 'none';
-    }  
-}
-
-function showEmojiTwo() {
-    if(em_two.style.display !== 'block') {
-        em_two.style.display = 'block';
-        em_one.style.display = 'none';
-        em_three.style.display = 'none';
-        em_four.style.display = 'none';
-        em_five.style.display = 'none';
-    }
-    else {
-        em_two.style.display = 'none';
-    }  
-}
-
-function showEmojiThree() {
-    if(em_three.style.display !== 'block') {
-        em_three.style.display = 'block';
-        em_one.style.display = 'none';
-        em_two.style.display = 'none';
-        em_four.style.display = 'none';
-        em_five.style.display = 'none';
-    }
-    else {
-        em_three.style.display = 'none';
-    }  
-}
-
-function showEmojiFour() {  
-    if(em_four.style.display !== 'block') {
-        em_four.style.display = 'block';
-        em_one.style.display = 'none';
-        em_two.style.display = 'none';
-        em_three.style.display = 'none';
-        em_five.style.display = 'none';
-    }
-    else {
-        em_four.style.display = 'none';
-    }  
-}
-
-function showEmojiFive() {
-    if(em_five.style.display !== 'block') {
-        em_five.style.display = 'block';
-        em_one.style.display = 'none';
-        em_two.style.display = 'none';
-        em_three.style.display = 'none';
-        em_four.style.display = 'none';
-    }
-    else {
-        em_five.style.display = 'none';
-    }  
-}
-
-
-function addEmojiOne(emoji) {
-    document.getElementById('message').value += emoji;
-}
-
-function addEmojiTwo(emoji) {
-    document.getElementById('message').value += emoji;
-}
-
-function addEmojiThree(emoji) {
-    document.getElementById('message').value += emoji;
-}
-
-function addEmojiFour(emoji) {
-    document.getElementById('message').value += emoji;
-}
-
-function addEmojiFive(emoji) {
-    document.getElementById('message').value += emoji;
-}
-
-function copyText() {
-    let textArea = document.getElementById("message");
-    navigator.clipboard.writeText(textArea.value).then(function() {
-        alert("Text Copied!"); 
-    }).catch(function(err) {
-        console.error('Error Copy: ', err);
-    });
-}
-
-</script>
 
 
 
